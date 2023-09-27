@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Methods</title>
+  <style>
+    body {
+      text-align: center;
+      background-image: url('https://images.wallpaperscraft.com/image/single/street_puddle_neon_145261_1440x900.jpg');
+      background-size: cover;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    button {
+      font-family: 'comic sans ms';
+      color: #000000 !important;
+      font-size: 14px;
+      text-shadow: 1px 1px 0px #DE4433;
+      box-shadow: 3px 1px 1px #BEE2F9;
+      padding: 10px 25px;
+      border-radius: 10px;
+      border: 2px ridge #A3938C;
+      background: #EEC6BC;
+      background: linear-gradient(to top, #EEC6BC, #CF3A29);
+      cursor: pointer;
+    }
+    button:hover {
+      color: #000000 !important;
+      background: #CF271B;
+      background: linear-gradient(to top, #CF271B, #EED6CD);
+    }
+
+    .container {
+      border: 2px solid #dfe0df;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      background-color: rgba(249, 249, 249, 0.172);
+      border-radius: 50px;
+      margin-top: 50px;
+      backdrop-filter: blur(5px);
+      filter: drop-shadow(-1px 3px 15px #dfe0df);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Array length</h1>
+    <p>The length property of an array returns the number of elements in the array.</p>
+    <button onclick="displayLength()">Display length</button>
+    <p id="length"></p>
+
+    <h1>Array toString()</h1>
+    <p>The toString() method of an array returns a string representation of the array.</p>
+    <button onclick="displayToString()">Display toString()</button>
+    <p id="toString"></p>
+
+    <h1>Array pop()</h1>
+    <p>The pop() method of an array removes the last element from the array and returns it.</p>
+    <button onclick="displayPop()">Display pop()</button>
+    <p id="pop"></p>
+  </div>
+
+  <script>
+    var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    function displayLength() {
+      document.getElementById("length").innerHTML = arr.length;
+    }
+
+    function displayToString() {
+      document.getElementById("toString").innerHTML = arr.toString();
+    }
+
+    function displayPop() {
+      document.getElementById("pop").innerHTML = arr.pop();
+    }
+  </script>
+</body>
+</html>
